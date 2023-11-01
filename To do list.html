@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="tabs">
+            <div class="tab" id="tab-all" onclick="showTasks('all')">All Tasks</div>
+            <div class="tab" id="tab-today" onclick="showTasks('today')">Today's Tasks</div>
+            <div class="tab" id="tab-overdue" onclick="showTasks('overdue')">Overdue Tasks</div>
+        </div>
+        <div class="task-entry">
+            <input type="text" id="task" placeholder="Add a new task">
+            <input type="date" id="deadline" placeholder="Deadline Date">
+            <button id="add">Add</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
